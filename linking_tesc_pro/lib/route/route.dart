@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:linking_tesc_pro/page/aftersale/AfterSaleEditPage.dart';
 import 'package:linking_tesc_pro/page/aftersale/AfterSalePage.dart';
 import 'package:linking_tesc_pro/page/aftersale/AfterSaleViewPage.dart';
 import 'package:linking_tesc_pro/page/supExAnalysis/supPage.dart';
@@ -10,5 +11,6 @@ List<GetPage<dynamic>> getPagesroute = [
   GetPage(name: '/task', page: () => TaskPage()),
   GetPage(name: '/aftersale', page: () => AfterSaleApplication()),
   GetPage(name: '/seanalysis', page: () => SupPage()),
-  GetPage(name: '/aftersaleview', page: () => AfterSaleViewPage())
+  GetPage(name: '/aftersaleview', page: () => AfterSaleViewPage()),
+  GetPage(name: '/aftersaledit', page: () => AfterSaleEditPage()),
 ];

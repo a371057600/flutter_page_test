@@ -12,6 +12,8 @@ class ComResponse<T> {
 class NetRequest {
   Response response;
   var dio = Dio();
+  FormData formData;
+
   Future<ComResponse<T>> requestData<T>(String path,
       {Map<String, dynamic> queryParameters,
       dynamic data,

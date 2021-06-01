@@ -13,11 +13,6 @@ class ControllerWB extends GetxController {
       "url": ["/inventorycheck", "/purchaselist"]
     }
   ].obs;
-  void mapprint(int i) {
-    var url = maptitle[0]["url"][i];
-    Get.to(url);
-  }
-
   //功能
   var wbtitlelist = <WorkBench>[
     WorkBench(department: "仓库管理", func: [
@@ -102,10 +97,10 @@ class ControllerWB extends GetxController {
               child: InkWell(
                 onTap: () {
                   if (wbulist.length > 0) {
-                    Get.to(SplashScreens(
-                      route: wbulist[index],
-                      arguments: {"ObjectId": wbulist[index]},
-                    ));
+                    Get.to(() => SplashScreens(
+                          route: wbulist[index],
+                          arguments: {"ObjectId": wbulist[index]},
+                        ));
                     // Get.toNamed(wbulist[index]);
                     // print(wbulist[index]);
                     // Get.defaultDialog();

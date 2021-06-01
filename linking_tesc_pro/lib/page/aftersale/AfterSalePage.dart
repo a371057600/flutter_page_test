@@ -82,7 +82,7 @@ class _AfterSaleApplicationState extends State<AfterSaleApplication>
         actions: <Widget>[
           InkWell(
             onTap: () {
-              print("搜查");
+              print("搜查表单");
             },
             child: Container(
               margin: EdgeInsets.only(right: 20),
@@ -96,7 +96,11 @@ class _AfterSaleApplicationState extends State<AfterSaleApplication>
           ),
           InkWell(
             onTap: () {
-              print("添加订单");
+              print("创建表单");
+              Get.to(SplashScreens(
+                route: "/aftersaledit",
+                arguments: {"title": "创建申请表"},
+              ));
             },
             child: Container(
               padding: EdgeInsets.only(right: 10),
@@ -229,7 +233,7 @@ class _AfterSaleApplicationState extends State<AfterSaleApplication>
               ),
               GTLTitleList(
                 imageUrl:
-                    "http://dg.gtltw.ltd:8000/upload/images/202105/39fcbdf9c321ea6c8c5c1808a0c47de2.jpg",
+                    "http://dg.gtltw.ltd:8000/upload/images/202105/39fc48776a47c4463723eccd75b7b295.jpg",
                 // qty: "100",
                 itemNo: "20190202",
                 category: "种类",
